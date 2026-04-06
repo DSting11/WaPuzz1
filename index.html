@@ -3,141 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WaPuzz 1</title>
+    <title>WaPuzz - Puzzle #1</title>
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-            background-color: #ffffff;
-            color: #000000;
-            min-height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 2rem;
-        }
-
-        .container {
-            max-width: 600px;
-            width: 100%;
+            background-color: black;
+            color: white;
+            font-family: monospace;
             text-align: center;
+            padding-top: 100px;
         }
 
-        h1 {
-            font-size: 2.5rem;
-            font-weight: 700;
-            margin-bottom: 2.5rem;
-            letter-spacing: -1px;
+        p {
+            font-size: 18px;
+            line-height: 1.8;
         }
 
-        .rules-box {
-            background: #f8f8f8;
-            border: 2px solid #000000;
-            border-radius: 12px;
-            padding: 1.5rem;
-            margin-bottom: 1.5rem;
-            text-align: left;
-        }
-
-        .rules-title {
-            font-size: 0.875rem;
-            font-weight: 600;
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-            margin-bottom: 1rem;
-            color: #333;
-        }
-
-        .rules-list {
-            list-style: none;
-        }
-
-        .rules-list li {
-            margin-bottom: 0.75rem;
-            padding-left: 1.5rem;
-            position: relative;
-            font-size: 0.95rem;
-            line-height: 1.5;
-            color: #222;
-        }
-
-        .rules-list li:last-child {
-            margin-bottom: 0;
-        }
-
-        .rules-list li::before {
-            content: "•";
-            position: absolute;
-            left: 0;
+        .wapuzz {
             font-weight: bold;
+            font-size: 24px;
         }
 
-        .bounty-line {
-            font-size: 1.125rem;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            color: #000;
-        }
-
-        .start-btn {
-            padding: 1rem 3rem;
-            font-size: 1rem;
-            font-weight: 600;
-            font-family: inherit;
-            background: #000000;
-            color: #ffffff;
-            border: 2px solid #000000;
-            border-radius: 8px;
-            cursor: pointer;
-            transition: all 0.2s ease;
-        }
-
-        .start-btn:hover {
-            background: #ffffff;
-            color: #000000;
-        }
-
-        @media (max-width: 480px) {
-            h1 {
-                font-size: 2rem;
-            }
-            
-            .rules-box {
-                padding: 1.25rem;
-            }
+        .hidden {
+            opacity: 0.5;
+            font-size: 12px;
         }
     </style>
 </head>
 <body>
-
-    <div class="container">
-        <h1>WaPuzz 1</h1>
-        
-        <div class="rules-box">
-            <div class="rules-title">Peraturan</div>
-            <ul class="rules-list">
-                <li>AI Diperbolehkan</li>
-                <li>Puzzle ini sangat susah, Hanya Lanjutkan jika anda mampu</li>
-                <li>Keterlibatan dengan banyak aplikasi karena ini ARG (Alternate Reality Game)</li>
-                <li>Kelompok diperbolehkan</li>
-            </ul>
-        </div>
-
-        <div class="bounty-line">Bounty: Rp.35.000.00</div>
-
-        <button class="start-btn" onclick="startPuzzle()">Start</button>
-    </div>
-
-    <script>
-        function startPuzzle() {
-            window.location.href = 'https://drive.google.com/file/d/1ELLKwVJKA4CRsv6Kyhu0_xSmXFeCjNNs/view?usp=sharing';
-        }
-    </script>
-
+    <p>
+        I'm looking for about 64 individuals who can solve this puzzle.<br>
+        There is a code hidden in this text. This is the first of 15 puzzles. Find it to continue.<br><br>
+        <span class="wapuzz">WaPuzz</span><span class="hidden">instagram</span>
+    </p>
 </body>
 </html>
